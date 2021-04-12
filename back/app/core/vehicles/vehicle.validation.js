@@ -29,3 +29,7 @@ exports.validateVehicleInput = [
     .withMessage('Wrong type value for passengersNumber.'),
   check('color').trim().not().isEmpty().withMessage('Field color is required'),
 ];
+
+exports.validateVehicleUpdate = [
+  check('color').trim().not().isEmpty().withMessage('Field color is required'),
+];
