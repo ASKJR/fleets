@@ -10,6 +10,15 @@ const VolvoApiService = {
       return false;
     }
   },
+  async get(endpoint) {
+    try {
+      const response = await axios.get(endpoint);
+      return response.data.data;
+    } catch (error) {
+      console.log(error);
+      return false;
+    }
+  },
 };
 
 export default VolvoApiService;
