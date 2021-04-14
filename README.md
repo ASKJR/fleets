@@ -25,7 +25,7 @@ There are two ways of running the application locally in your machine:
     Using Docker
     <ol>
       <li>You must have docker installed in your machine -> https://docs.docker.com/get-docker/</li>
-      <li>In the root directory type the following commands</li> 
+      <li>In the root directory, type the following commands</li> 
       <li>
         
 ```bash
@@ -45,7 +45,7 @@ $ docker run -e 'MONGO_DB_URI=SECRET' -p 3000:3000 -d api
       <li>You must have Node.js 14 & npm installed in your machine</li>
       <li>Create a file called <b>.env</b> in the root directory and type the following:</li>
       <li>MONGO_DB_URI=SECRET</li>
-      <li>In the root directory type the following commands</li>
+      <li>In the root directory, type the following commands</li>
       <li>
         
 ```bash
@@ -78,3 +78,50 @@ https://volvo-api.albertokato.com.br/api -> healthcheck
 
 https://volvo-api.albertokato.com.br/api/v1/vehicles -> fetching all vehicles
 
+
+<hr>
+
+## FRONTEND
+
+### Stack
+
+<ul>
+  <li>Vue.js 2</li>
+  <li>Buefy</li>
+  <li>Axios</li>
+  <li> Vue CLI</li>
+  <li>Eslint - Airbnb Style</li>
+</ul>
+
+### Installation
+
+<ol>
+  <li>
+    npm <b>must</b> be installed in your local machine
+    <ol>
+      <li>In the root directory, type the following commands</li> 
+      <li>
+        
+```
+npm install
+```
+   </li>
+         <li>
+  
+ ```
+npm run serve
+```
+   </li>
+    </ol>
+  </li>
+ </ol>
+ 
+ ### Live
+ 
+ https://volvo.albertokato.com.br/
+ 
+ 
+ <hr>
+
+## DEVOPS
+I deployed my aplication on https://www.digitalocean.com/. Used Docker & Docker Compose to make life easier.
