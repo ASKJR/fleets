@@ -19,6 +19,14 @@ const VolvoApiService = {
       return false;
     }
   },
+  async delete(endpoint) {
+    try {
+      await axios.delete(endpoint);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  },
 };
 
 export default VolvoApiService;
