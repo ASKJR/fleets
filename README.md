@@ -25,7 +25,7 @@ There are two ways of running the application locally in your machine:
     Using Docker
     <ol>
       <li>You must have docker installed in your machine -> https://docs.docker.com/get-docker/</li>
-      <li>In the root directory, type the following commands</li> 
+      <li>In the root directory (back - folder), type the following commands</li> 
       <li>
         
 ```bash
@@ -43,9 +43,9 @@ $ docker run -e 'MONGO_DB_URI=SECRET' -p 3000:3000 -d api
   <li>Installing all dependencies with npm
     <ol>
       <li>You must have Node.js 14 & npm installed in your machine</li>
-      <li>Create a file called <b>.env</b> in the root directory and type the following:</li>
+      <li>Create a file called <b>.env</b> in the root directory (back - folder) and type the following:</li>
       <li>MONGO_DB_URI=SECRET</li>
-      <li>In the root directory, type the following commands</li>
+      <li>In the root directory (back - folder), type the following commands</li>
       <li>
         
 ```bash
@@ -63,7 +63,7 @@ $ npm start
 </ol>
 
 ### Unit tests
-Run the following command in root directory after the API is UP:
+Run the following command in root directory (back - folder) after the API is UP:
 ```bash
 $ npm test
 ```
@@ -99,7 +99,7 @@ https://volvo-api.albertokato.com.br/api/v1/vehicles -> fetching all vehicles
   <li>
     npm <b>must</b> be installed in your local machine
     <ol>
-      <li>In the root directory, type the following commands</li> 
+      <li>In the root directory (front - folder), type the following commands</li> 
       <li>
         
 ```
