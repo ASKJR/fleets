@@ -33,7 +33,10 @@
     </b-table>
     <div class="columns" v-if="found">
       <div class="column is-1">
-        <b-button  class="button is-primary">Update</b-button>
+        <b-button  class="button is-primary"
+        @click="$router.push('/update-vehicle/' + userId)">
+          Update
+        </b-button>
       </div>
       <div class="column is-1">
         <b-button  class="button is-danger" @click="remove">Delete</b-button>
@@ -53,6 +56,7 @@ export default {
       chassisSerie: null,
       chassisNumber: null,
       found: false,
+      userId: '',
       data: [],
       columns: VEHICLES_COLUMNS,
     };
@@ -74,6 +78,7 @@ export default {
         });
       } else {
         this.found = true;
+        this.userId = this.data[0]._id;
       }
     },
     async clear() {

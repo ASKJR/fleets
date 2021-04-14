@@ -10,6 +10,15 @@ const VolvoApiService = {
       return false;
     }
   },
+  async update(endpoint, data) {
+    try {
+      const response = await axios.put(endpoint, data);
+      return response.data.data;
+    } catch (error) {
+      console.log(error);
+      return false;
+    }
+  },
   async get(endpoint) {
     try {
       const response = await axios.get(endpoint);
